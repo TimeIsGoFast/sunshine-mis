@@ -1,0 +1,272 @@
+@charset "UTF-8";
+body{
+    background: url("../images/bg.jpg") repeat;
+    background-size:100%;
+    background-attachment: fixed;
+
+}
+.message{
+    margin-top: 50px;
+    width: 100%;
+    height: 230px;
+
+
+}
+.message img{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+
+}
+.message .p1{
+    font-family: "微软雅黑";
+    line-height: 60px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #eb283e;
+    text-align: center;
+}
+.message .p2{
+    font-family: "微软雅黑";
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #17323f;
+    text-align: center;
+}
+.description{
+    width: 1000px;
+    height: 300px;
+    margin:10px auto;
+    overflow: hidden;
+}
+.description .left{
+    width: 300px;
+    float: left;
+}
+.description .left img{
+    display: block;
+    width: 300px;
+
+}
+.description .right{
+    width: 650px;
+    margin: 10px 0px;
+    float: right;
+}
+.description .right p{
+    font-family: "Microsoft YaHei", serif;
+    line-height: 40px;
+    font-size: 1.2em;
+    color:#17323f;
+
+}
+.description .right .p1 a{
+
+     color:#eb283e;
+
+ }
+.description .right .p1 a:hover{
+
+    color:#17323f;
+
+}
+.game_center{
+    font-family: "Microsoft YaHei", serif;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 20px;
+    color: #eb283e;
+    cursor: pointer;
+}
+.game_center span:hover{
+    color: #4eaa9d;
+}
+.fanyi{
+
+    width: 1000px;
+     margin:50px auto;
+    overflow: hidden;
+
+}
+.fanyi .left{
+    width: 480px;
+    height: 298px;
+
+    float: left;
+
+}
+.fanyi .right{
+    width: 480px;
+    height: 298px;
+    border: 1px solid #ccc;
+    float: right;
+   background-color: #f0f0f0;
+    border-radius: 5px;
+
+}
+.fanyi .right .p1{
+    font-size: 1em;
+    color:#999;
+    padding: 10px;
+    font-family: "Microsoft YaHei", serif;
+
+}
+.fanyi .right .p2{
+    font-size: 1.4em;
+    color:#17323f;
+    padding: 10px;
+    font-family: "Microsoft YaHei", serif;
+
+
+}
+.fanyi .left .textareaStyle{
+    width: 480px;
+    height: 298px;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 1.4em;
+    color:#17323f;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+
+}
+.bottom3{
+    width: 1000px;
+    margin:-20px auto;
+   overflow: hidden;
+
+}
+.bottom3 .button1{
+    width: 120px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: white;
+    float: left;
+}
+.bottom3 .button1 p{
+    color: #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.4em;
+    font-family: Consolas;
+}
+.bottom3 .p1{
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+    font-size: 4em;
+    font-family: Consolas;
+    float: left;
+}
+.bottom3 .button2{
+    width: 120px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: white;
+    float: left;
+    cursor: pointer;
+}
+.bottom3 .button2 select{
+    width: 120px;
+    border: none;
+    outline: none;
+    margin:auto;
+    color:#17323f;
+    line-height: 30px;
+    font-size: 1.4em;
+    font-family: Consolas;
+    border-radius: 2px;
+}
+.bottom3 .button3{
+    width: 120px;
+    height: 30px;
+    border: 1px solid #eb283e;
+    border-radius: 2px;
+    background-color: #eb283e;
+    float: left;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.bottom3 .button3 p{
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.4em;
+    font-family: Consolas;
+}
+.bottom3 .button3:hover{
+    border: 1px solid #ff4968;
+    background-color: #ff4968;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footAnimation{
+    margin-top: 300px;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+#footAnimation img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#footAnimation .footerWave{
+    width: 100%;
+    position: absolute;
+
+
+}
+#footAnimation #wave1{
+    z-index: 1;
+
+}
+#footAnimation #wave2{
+    z-index: 3;
+    top: 5%;
+}
+#footAnimation #wave3{
+    z-index: 5;
+    top: 20%;
+}
+#footAnimation #dood{
+    z-index: 2;
+    top: 30%;
+    width: 200px;
+    left: 23%;
+
+}
+#footAnimation #whale{
+    z-index: 4;
+    width: 300px;
+    right:300px;
+    top:100px;
+}
+#footAnimation .footerDood{
+    position: absolute;
+}
+#footAnimation .footerWhale{
+    position: absolute;
+}
+.bottom2{
+    width: 100%;
+    height: 300px;
+    background-color: #17323f;
+}

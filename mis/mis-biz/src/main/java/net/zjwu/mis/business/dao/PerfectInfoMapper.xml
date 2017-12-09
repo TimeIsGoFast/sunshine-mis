@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.zjwu.mis.business.dao.PerfectInfoMapper" >
+  <resultMap id="BaseResultMap" type="net.zjwu.mis.business.model.PerfectInfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="tel" property="tel" jdbcType="VARCHAR" />
+    <result column="mail" property="mail" jdbcType="VARCHAR" />
+    <result column="birth" property="birth" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="headImg" property="headimg" jdbcType="VARCHAR" />
+    <result column="time" property="time" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    id, uid, name, nickname, tel, mail, birth, remark, headImg, time
+  </sql>
+  <select id="getPerfectInfoByUid" resultMap="BaseResultMap">
+    select * from t_t_perfectinfo where uid = #{uid}
+  </select>
+  
+  <insert id="addPerfectInfo" parameterType="net.zjwu.mis.business.model.PerfectInfo" >
+  insert into t_t_perfectinfo(uid, name, nickname, tel, mail, birth, remark, headImg, time) values(#{uid}, #{name}, #{nickname}, #{tel}, #{mail}, #{birth}, #{remark}, #{headimg}, #{time})
+  </insert>
+  
+  <update id="updatePerfectInfo" parameterType="net.zjwu.mis.business.model.PerfectInfo">
+  update t_t_perfectinfo 
+  <set>
+     <if test="name!=null and name!=''">
+      name = #{name},
+     </if>
+     <if test="nickname!=null and nickname!=''">
+      nickname = #{nickname},
+     </if>
+     <if test="tel!=null and tel!=''">
+      tel = #{tel},
+     </if>
+     <if test="mail!=null and mail!=''">
+      mail = #{mail},
+     </if>
+     <if test="birth!=null and birth!=''">
+      birth = #{birth},
+     </if>
+     <if test="remark!=null and remark!=''">
+      remark = #{remark},
+     </if>
+     <if test="headimg!=null and headimg!=''">
+      headImg = #{headimg},
+     </if>
+     <if test="time!=null and time!=''">
+      time = #{time},
+     </if>
+  </set>
+  where uid = #{uid}
+  </update>
+  
+  <select id="getheadimg" resultType="java.lang.String">
+     select headImg from t_t_perfectinfo where uid=#{uid}
+  </select>
+  
+  <insert id="insertIntoInfo" parameterType="net.zjwu.mis.system.model.User">
+    insert into t_t_perfectinfo(uid,nickname,headImg) values(#{uid},#{name},'defult.JPG')
+  </insert>
+</mapper>

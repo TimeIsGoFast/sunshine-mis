@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.zjwu.mis.business.dao.MessageInfoMapper" >
+  <resultMap id="BaseResultMap" type="net.zjwu.mis.business.model.MessageInfo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="time" property="time" jdbcType="TIMESTAMP" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="headimg" property="headimg" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="net.zjwu.mis.business.model.MessageInfo" extends="BaseResultMap" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Blob_Column_List" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    content
+  </sql>
+  
+  <select id="showMessage" resultMap="BaseResultMap">
+  SELECT t_v_message.uid,t_v_message.content, t_v_message.`name`,t_v_message.time ,t_t_perfectinfo.headImg from t_v_message,t_t_perfectinfo  WHERE t_v_message.uid = t_t_perfectinfo.uid order by t_v_message.time DESC
+  </select>
+</mapper>

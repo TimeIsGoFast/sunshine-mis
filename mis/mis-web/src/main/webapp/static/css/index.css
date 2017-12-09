@@ -1,0 +1,255 @@
+@charset "UTF-8";
+body{
+    background: url("../images/bg.jpg") repeat;
+    background-size:100%;
+    background-attachment: fixed;
+
+}
+.message{
+    margin-top: 50px;
+    width: 100%;
+    height: 230px;
+
+
+}
+.message img{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+
+}
+.message .p1{
+    font-family: "微软雅黑";
+    line-height: 60px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #eb283e;
+    text-align: center;
+}
+.message .p2{
+    font-family: "微软雅黑";
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #17323f;
+    text-align: center;
+}
+.images{
+    width:1000px;
+    height:500px;
+    overflow:hidden;
+    position:relative;
+    margin: auto;
+   z-index: 1;
+}
+.images .slider{
+    width:7000px;
+    height:500px;
+    position:relative;
+    left:-1000px;
+}
+.images ul li{
+    float: left;
+    width: 1000px;
+    height: 100%;
+}
+.images ul li img{
+    display: block;
+
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding:0;
+}
+.images_btn{
+    width:135px;
+    margin:22px auto;
+}
+.images_btn .btn{
+
+    bottom:20px;
+    width:135px;
+    left:50%;
+    cursor:pointer
+}
+.images_btn .btn>li{
+    width:17px;
+    height:17px;
+    background:#eb283e;
+    float:left;
+    margin:0 5px;
+    border-radius: 1px;
+}
+.images_btn .btn>li.current{
+    background:#17323f;
+}
+.description{
+    margin: 60px auto;
+    width: 1000px;
+    height: 300px;
+    background: url("../images/redbg.jpg") ;
+    background-size:100%;
+    overflow: hidden;
+
+}
+.description .left{
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+.description .left img{
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.description .right{
+    width: 500px;
+    height: 300px;
+    float: left;
+}
+.description .right .p1{
+    font-size: 2em;
+    color: white;
+    line-height: 70px;
+}
+.description .right .p2{
+    font-size: 1em;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    color: white;
+
+}
+.contain1{
+    width: 1000px;
+    height: 260px;
+    margin: auto;
+   overflow: hidden;
+}
+.contain1 .left{
+    width: 490px;
+    height: 260px;
+    float: left;
+    background-color: #4eaa9d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contain1 .right{
+    width: 490px;
+    height: 260px;
+    float: right;
+    background-color: #4eaa9d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contain1 .left:hover{
+    background-color:#17323f ;
+}
+.contain1 .right:hover{
+    background-color:#17323f;
+}
+.contain1 .left .title{
+    width: 440px;
+    margin:30px auto;
+    background-color: #eb283e;
+
+}
+.contain1 .left .title p{
+    font-size: 2.2em;
+    font-family: "微软雅黑";
+
+    line-height: 60px;
+    text-align: center;
+    color: white;
+
+}
+.contain1 .right .title{
+    width: 440px;
+    margin:30px auto;
+    background-color: #eb283e;
+
+}
+.contain1 .right .title p{
+    font-size: 2.2em;
+    font-family: "微软雅黑";
+
+    line-height: 60px;
+    text-align: center;
+    color: white;
+
+}
+.contain1 .left .neirong{
+    width: 440px;
+    margin:10px auto;
+
+}
+.contain1 .left .neirong p{
+    font-size: 1em;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    color: white;
+}
+.contain1 .right .neirong{
+    width: 440px;
+    margin:10px auto;
+
+}
+.contain1 .right .neirong p{
+    font-size: 1em;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    color: white;
+}
+#footAnimation{
+    margin-top: 300px;
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+#footAnimation img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#footAnimation .footerWave{
+    width: 100%;
+    position: absolute;
+
+
+}
+#footAnimation #wave1{
+    z-index: 1;
+
+}
+#footAnimation #wave2{
+    z-index: 3;
+    top: 5%;
+}
+#footAnimation #wave3{
+    z-index: 5;
+   top: 20%;
+}
+#footAnimation #dood{
+    z-index: 2;
+    top: 20%;
+    width: 200px;
+    left: 30%;
+    left: 23%;
+}
+#footAnimation #whale{
+    z-index: 4;
+    width: 300px;
+    right:300px;
+    top:100px;
+}
+#footAnimation .footerDood{
+    position: absolute;
+}
+#footAnimation .footerWhale{
+    position: absolute;
+}
+.bottom2{
+    width: 100%;
+    height: 300px;
+    background-color: #17323f;
+}
