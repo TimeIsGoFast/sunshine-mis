@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.zjwu.mis.business.dao.SuiBiMapper" >
+  <resultMap id="BaseResultMap" type="net.zjwu.mis.business.model.SuiBi" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="uid" property="uid" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="time" property="time" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="net.zjwu.mis.business.model.SuiBi" extends="BaseResultMap" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    id, uid, title, time
+  </sql>
+  <sql id="Blob_Column_List" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    content
+  </sql>
+  <insert id="addSuiBi" parameterType="net.zjwu.mis.business.model.SuiBi">
+  insert into t_t_suibi(uid,title,content) values(#{uid},#{title},#{content})
+  
+  </insert>
+  <select id="showMessage" resultMap="BaseResultMap">
+ SELECT * from t_t_suibi where uid=#{uid} ORDER BY time DESC
+  </select>
+  
+  <select id="getSuiBiById" resultMap="BaseResultMap" >
+  select * from t_t_suibi where id=#{id}
+  </select>
+  
+  <delete id="delSuibi">
+  delete  from t_t_suibi where id=#{id}
+  </delete>
+</mapper>

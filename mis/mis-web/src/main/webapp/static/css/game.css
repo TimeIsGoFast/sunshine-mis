@@ -1,0 +1,120 @@
+@charset "UTF-8";
+body{
+    background: url("../images/bg.jpg") repeat;
+    background-size:100%;
+    background-attachment: fixed;
+
+}
+.message{
+    margin-top: 50px;
+    width: 100%;
+    height: 230px;
+
+
+}
+.message img{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+
+}
+.message .p1{
+    font-family: "微软雅黑";
+    line-height: 60px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #eb283e;
+    text-align: center;
+}
+.message .p2{
+    font-family: "微软雅黑";
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #17323f;
+    text-align: center;
+}
+.description{
+    width: 1000px;
+    height: 300px;
+    margin:10px auto;
+    overflow: hidden;
+}
+.description .left{
+    width: 300px;
+    float: left;
+}
+.description .left img{
+    display: block;
+    width: 300px;
+
+}
+.description .right{
+    width: 650px;
+    margin: 10px 0px;
+    float: right;
+}
+.description .right p{
+    font-family: "Microsoft YaHei", serif;
+    line-height: 40px;
+    font-size: 1.2em;
+    color:#17323f;
+
+}
+.game_center{
+    font-family: "Microsoft YaHei", serif;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 20px;
+    color: #eb283e;
+    cursor: pointer;
+}
+.game_center span:hover{
+    color: #4eaa9d;
+}
+.game_detail{
+    width: 1000px;
+    margin: 50px auto;
+    height: 500px;
+    overflow: hidden;
+    border-top: 2px dashed #ccc;
+
+}
+.game_detail .game1{
+    margin: 22px;
+    width: 288px;
+    height:187px;
+    float: left;
+    background-color: #4eaa9d;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.game_detail .game1 .title{
+    width: 240px;
+    margin:20px auto;
+    background-color: #eb283e;
+
+}
+.game_detail .game1 .title p{
+    font-size: 1.5em;
+    font-family: "微软雅黑";
+
+    line-height: 40px;
+    text-align: center;
+    color: white;
+
+}
+.game_detail .game1 .neirong{
+    width: 240px;
+    margin: auto;
+
+}
+.game_detail .game1 .neirong p{
+    font-size: 0.8em;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    color: white;
+}
+.game_detail .game1:hover{
+    background-color:#17323f ;
+}
